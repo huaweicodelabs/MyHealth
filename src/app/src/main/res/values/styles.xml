@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="style_Spinner">
+        <item name="android:background">@drawable/dropdown</item>
+        <item name="android:dropDownSelector">@android:color/transparent</item>
+        <item name="android:popupBackground">#f5f0f0</item>
+        <item name="android:spinnerMode">dropdown</item>
+
+    </style>
+
+    <style name="BottomNavigationViewTextStyle">
+
+    </style>
+
+    <style name="BottomNavigationViewTextStyleNotSelected">
+
+    </style>
+
+    <style name="Spinner" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+
+        <item name="android:textColor">@color/purple_200</item>
+
+    </style>
+
+    <style name="datepicker" parent="Theme.AppCompat.Light.Dialog">
+
+        <item name="colorAccent">@color/red</item>
+    </style>
+</resources>

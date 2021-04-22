@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.huawei.myhealth">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Behavior detection permission (Android 10 or later). This permission is sensitive and needs to be dynamically applied for in the code after being declared. -->
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" /> <!-- Behavior detection permission (Android 9). This permission is sensitive and needs to be dynamically applied for in the code after being declared. -->
+    <uses-permission android:name="com.huawei.hms.permission.ACTIVITY_RECOGNITION" />
+
+    <application
+        android:name=".kotlin.app.MyHealthApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyHealth"
+        tools:replace="android:allowBackup" >
+
+
+        <activity
+            android:name=".kotlin.ui.activity.MainActivity"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".java.ui.activity.MainActivity"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+
+        <meta-data
+            android:name="install_channel"
+            android:value="AppGallery" />
+
+        <service
+            android:name=".kotlin.service.MyPushService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".java.service.MyPushService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+
+        </service>
+
+        <meta-data
+            android:name="push_kit_auto_init_enabled"
+            android:value="true" />
+        <meta-data
+            android:name="com.huawei.hms.client.appid"
+            android:value="Enter your AppID"/>
+    </application>
+
+</manifest>

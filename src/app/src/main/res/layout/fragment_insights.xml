@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lite_grey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+      <RelativeLayout
+          android:id="@+id/rl_calendar"
+          android:layout_marginTop="@dimen/dimen_15dp"
+          android:layout_marginBottom="@dimen/dimen_15dp"
+          android:layout_width="200dp"
+          android:layout_height="@dimen/dimen_50dp"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:background="@drawable/border_bg">
+
+          <TextView
+              android:id="@+id/tv_date"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginLeft="@dimen/dimen_10dp"
+             
+              android:gravity="center"
+              android:text=""
+              android:textColor="@color/purple_200"
+              android:textSize="@dimen/dimen_18sp" />
+          <ImageView
+              android:layout_toRightOf="@+id/tv_date"
+              android:id="@+id/iv_calender"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/dimen_10dp"
+              android:src="@drawable/ic_baseline_calendar_today_24"/>
+      </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_weight="1"
+              
+                android:gravity="center_horizontal"
+                android:text="@string/nutrient"
+                android:textColor="@color/purple_200"
+                android:textSize="@dimen/dimen_12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+           
+                android:gravity="center_horizontal"
+                android:text="@string/quantity"
+                android:textColor="@color/purple_200"
+                android:textSize="@dimen/dimen_12sp" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_3dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:layout_weight="2"
+                android:max="100"
+                android:progress="55"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/fivityfivepercent"
+                android:textColor="@color/black"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_weight="1"
+              
+                android:gravity="center_horizontal"
+                android:text="@string/protein"
+                android:textColor="@color/purple_200"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <TextView
+                android:id="@+id/tv_protein_q"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+               
+                android:gravity="center_horizontal"
+                android:text="@string/zerogram"
+                android:textColor="@color/purple_200"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <ProgressBar
+                android:id="@+id/pb_protein"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_3dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:layout_weight="2"
+                android:max="100"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/tv_protein_percentage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+               
+                android:gravity="center_horizontal"
+                android:text="@string/zeropercent"
+                android:textColor="@color/purple_200"
+                android:textSize="@dimen/dimen_16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_weight="1"
+              
+                android:gravity="center_horizontal"
+                android:text="@string/fats"
+                android:textColor="@color/purple_200"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <TextView
+                android:id="@+id/tv_fat_q"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+
+                android:gravity="center_horizontal"
+                android:text="@string/zerogram"
+                android:textColor="@color/purple_200"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <ProgressBar
+                android:id="@+id/pb_fat"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_3dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:layout_weight="2"
+                android:max="100"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/tv_fat_percentage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+
+                android:gravity="center_horizontal"
+                android:text="@string/zeropercent"
+                android:textColor="@color/purple_200"
+                android:textSize="@dimen/dimen_16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_weight="1"
+
+                android:gravity="center_horizontal"
+                android:text="@string/carbs"
+                android:textColor="@color/purple_200"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <TextView
+                android:id="@+id/tv_carbs_q"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+
+                android:gravity="center_horizontal"
+                android:text="@string/zerogram"
+                android:textColor="@color/purple_200"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <ProgressBar
+                android:id="@+id/pb_carbs"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_3dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:layout_weight="2"
+                android:max="100"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/tv_carbs_percentage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+
+                android:gravity="center_horizontal"
+                android:text="@string/zeropercent"
+                android:textColor="@color/purple_200"
+                android:textSize="@dimen/dimen_16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+
+                android:gravity="center_horizontal"
+                android:text="@string/fiber"
+                android:textColor="@color/purple_200"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <TextView
+                android:id="@+id/tv_fiber_q"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+
+                android:gravity="center_horizontal"
+                android:text="@string/zerogram"
+                android:textColor="@color/purple_200"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <ProgressBar
+                android:id="@+id/pb_fiber"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_3dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:layout_weight="2"
+                android:max="100"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/tv_fiber_percentage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+
+                android:gravity="center_horizontal"
+                android:text="@string/zeropercent"
+                android:textColor="@color/purple_200"
+                android:textSize="@dimen/dimen_16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="@dimen/dimen_180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dimen_35dp"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10dp"
+            android:text="@string/done"
+            android:textColor="@color/white"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_10dp"
+            android:background="@color/lite_grey"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/dimen_10dp"
+
+                android:gravity="center_vertical"
+                android:text="@string/other_nutrients"
+                android:textColor="@color/purple_200"
+                android:textSize="@dimen/dimen_16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lite_white"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/dimen_10dp"
+
+                android:gravity="center_vertical"
+                android:text="@string/can_do_better"
+                android:textColor="@color/red"
+                android:textSize="@dimen/dimen_14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+
+                android:gravity="center_vertical"
+                android:text="@string/other_cal"
+                android:textColor="@color/purple_200"
+                android:textSize="@dimen/dimen_12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_300dp"
+            android:background="@color/white">
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

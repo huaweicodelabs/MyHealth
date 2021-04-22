@@ -1,0 +1,239 @@
+<resources>
+    <string name="app_name">My Health</string>
+    <string name="app_version">App Version</string>
+
+    <string name="from_huawei">From Huawei</string>
+    <string name="home">Home</string>
+    <string name="my_profile">My Profile</string>
+    <string name="settings">Settings</string>
+    <string name="insights">Insights</string>
+    <string name="water_intake">Water Intake</string>
+    <string name="cal_burned">Cal Burned</string>
+
+    <!-- Screen Names / Labels -->
+    <string name="sign_in_fragment">Sign In</string>
+    <string name="sign_up_fragment">Sign Up</string>
+
+    <!-- SignIn and Complete Profile -->
+    <string name="enter_mobile_no">Enter Mobile Number</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="no_account_signup">No Account? Click To Sign Up</string>
+    <string name="enter_otp">Enter OTP</string>
+
+    <!-- Home Screen -->
+    <string name="calorie_taken">Calorie Taken</string>
+    <string name="water_consumed">Water Consumed</string>
+    <string name="steps_count">Steps Count</string>
+    <string name="calorie_burned">Calorie Burned</string>
+
+    <!-- Complete Profile -->
+    <string name="complete_profile">Complete Profile</string>
+    <string name="complete_profile_heading">Completed your profile\n to proceed further</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="enter_full_name">Enter Full Name</string>
+    <string name="enter_age">Enter Age</string>
+    <string name="enter_bio">Enter Bio</string>
+    <string-array name="gender_array">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Third Gender</item>
+    </string-array>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="third_gender">Third Gender</string>
+    <string name="enter_height">Enter Height</string>
+    <string name="enter_weight">Enter Weight</string>
+    <string name="in_feet">Feet</string>
+    <string name="in_cm">Centimeter</string>
+    <string name="in_pounds">Pounds</string>
+    <string name="in_kg">Kilograms </string>
+    <string name="email_id">Email Id</string>
+    <string name="food_Type">Food Type</string>
+    <string name="vegetarian">Vegetarian</string>
+    <string name="save_complete_profile">Save Details</string>
+    <string name="today">Today</string>
+    <string name="workouts">Workouts</string>
+    <string name="glasses">0 of 10 Glasses</string>
+    <string name="one_glass">1 Glass (250 ml)</string>
+    <string name="way_togo">Way to go!</string>
+    <string name="water_tip">Every glass of water counts. Track \n another in 60 minutes</string>
+    <string name="insight_tip">Increasing protein content \n may help in weight loss</string>
+    <string name="steps">0 of 10,000 steps walked</string>
+    <string name="tv_steps">Steps</string>
+    <string name="tv_time">Time</string>
+    <string name="tv_distance">Distance</string>
+    <string name="todays_tip">Todays Tip</string>
+    <string name="enter_cal">Enter cal burnt</string>
+    <string name="steps_tip">Walking is an excellent form of exercise for people of all ages and abilities. Start your walking program gradually !</string>
+
+    <!-- My Profile -->
+    <string name="username">Username</string>
+    <string name="user_id">1234567890</string>
+    <string name="user_bio">User Bio</string>
+    <string name="userpic_desc">User Picture</string>
+    <string name="age">Age</string>
+    <string name="logout">Logout</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Notification Manager - Default String -->
+    <string name="channel_name">Default Channel</string>
+    <string name="channel_description">Its a default channel for push notification service. Create new channels based on your needs.</string>
+
+    <!-- Time Period -->
+    <string name="time_period">Time Period</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="morning_snack">Morning Snack</string>
+    <string name="lunch">Lunch</string>
+    <string name="evening_snack">Evening Snack</string>
+    <string name="dinner">Dinner</string>
+
+    <!-- Food Details -->
+    <string name="food_name">Food Name</string>
+
+
+    <!-- Cal Burned -->
+    <string name="enter_missing_fields">Enter the missing fields</string>
+
+    <!-- View and Add Food Nutrients In Calorie Count -->
+    <string name="view_and_add_food">View &amp; Add Food Details</string>
+    <string name="food_img_desc">Food Image</string>
+    <string name="select_no_of_portion">Select No Of Portion</string>
+    <string name="select_portion_type">Select Portion Type</string>
+    <string-array name="no_of_portion">
+        <item>No Of Portion</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>2.5</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="portion_type_for_meal">
+        <item>Portion Type</item>
+        <item>Katori</item>
+        <item>Cup</item>
+        <item>Chinese Bowl</item>
+        <item>Grams</item>
+    </string-array>
+    <string-array name="portion_type_for_fruits">
+        <item>Medium</item>
+        <item>Small</item>
+        <item>Large</item>
+        <item>Half</item>
+        <item>Cup</item>
+    </string-array>
+    <string-array name="portion_type_for_gravy">
+        <item>Table Spoon</item>
+        <item>Tea Spoon</item>
+        <item>Katori</item>
+        <item>Chinese Bown</item>
+        <item>Grams</item>
+    </string-array>
+    <string name="add_food">Add Food</string>
+    <string name="add_food_and_exit">Add Food &amp; Exit</string>
+    <string name="hint_inmin">In min</string>
+    <string name="hint_inkm">In km</string>
+    <string name="or">or</string>
+    <string name="cal">cal</string>
+    <string name="done">DONE</string>
+    <string name="nutrient">Nutrient</string>
+    <string name="quantity">Quantity</string>
+    <string name="protein">Protein</string>
+    <string name="fats">Fats</string>
+    <string name="carbs">Carbs</string>
+    <string name="fiber">Fiber</string>
+    <string name="fivityfivepercent">55%</string>
+    <string name="zeropercent">0%</string>
+    <string name="zerogram">0.0g</string>
+    <string name="other_nutrients">Other Nutrients</string>
+    <string name="can_do_better">Can do better</string>
+    <string name="other_cal">Calcium, Iron, Zinc, Magnesium , Cholestrol</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="name">Name</string>
+    <string name="mobileno">Mobile No</string>
+    <string name="resendcode">Resend code</string>
+    <string name="cal_consumed">0/1700 Calorie Consumed</string>
+    <string name="user_status">Behaviour Status : User is Still</string>
+    <string name="user_status_start_walking">Behaviour Status : User Begins to walk</string>
+    <string name="user_status_walking">Behaviour Status : User is walking</string>
+    <string name="user_status_stop_walking">Behaviour Status : User Stopped walking</string>
+
+    <string name="HEALTH_APP_SETTING_DATA_SHARE_HEALTHKIT_ACTIVITY_SCHEME">huaweischeme://healthapp/achievement?module=kit</string>
+    <string name="KEEPING_BARRIER_LABEL">behavior keeping barrier label</string>
+    <string name="BEGINNING_BARRIER_LABEL">behavior beginning barrier label</string>
+    <string name="ENDING_BARRIER_LABEL">behavior ending barrier label</string>
+    <string name="ACTIVITY_RECOGNITION">com.huawei.hms.permission.ACTIVITY_RECOGNITION</string>
+    <string name="CAL_TAKEN_DEFAULT">/1700 Cal Taken</string>
+    <string name="GLASSESS_DEFAULT"> Glasses</string>
+    <string name="STEPS_DEFAULT">  Steps</string>
+    <string name="CAL_DEFAULT">   Cal</string>
+    <string name="Burned">Burned</string>
+    <string name="date_pattern">dd-MM-yyyy</string>
+    <string name="date_selected">date_selected</string>
+    <string name="BEHAVIOR_ACTION">BEHAVIOR_BARRIER_RECEIVER_ACTION</string>
+    <string name="APP">MY_HEALTH</string>
+    <string name="UID">uid</string>
+    <string name="my_health_database">my_health_database</string>
+    <string name="silentSignIn_success">silentSignIn success</string>
+    <string name="startwalk">The user begins to walk.</string>
+    <string name="stopwalking">The user stops walking.</string>
+    <string name="start_stepcount_success">start Reading the step count is successfull</string>
+    <string name="start_stepcount_failed">start Reading the step count is failed</string>
+    <string name="stop_stepcount_success">stop Reading the step count is successfull</string>
+    <string name="stop_stepcount_failed">stop Reading the step count is failed</string>
+    <string name="token">token</string>
+    <string name="walking">Walking</string>
+    <string name="running">Running</string>
+    <string name="bicycling">Bicycling</string>
+    <string name="swimming_freestyle">Swimming Freestyle</string>
+    <string name="workout">workout</string>
+    <string name="manual">Manual</string>
+    <string name="calculation">Calculation</string>
+    <string name="Cal_burn">Cal Burned :</string>
+    <string name="double_pattern">#.##</string>
+    <string name="bio">bio</string>
+    <string name="enterdata">Please enter the </string>
+    <string name="mobilenum">mobileno</string>
+    <string name="g"> g</string>
+    <string name="zerog"> 0g</string>
+    <string name="percentage"> %</string>
+    <string name="zeropercentage"> 0%</string>
+    <string name="mobilecode">+91</string>
+    <string name="submit_OTP">Submit OTP</string>
+    <string name="otp_sent">OTP sent</string>
+    <string name="sign_In">Sign In</string>
+    <string name="already_user">already sign in a user</string>
+    <string name="enter_validnumber">Enter Valid Mobile No</string>
+    <string name="steps_value"> of 10,000 steps walked</string>
+    <string name="steps_walked"> StepsWalked</string>
+    <string name="admin">admin</string>
+    <string name="morning">Morning</string>
+    <string name="intake_success">Calorie Intake Was Saved Successfully</string>
+    <string name="select_portion">Please Select No Of Portion</string>
+    <string name="watercount">watercount</string>
+    <string name="watercount_total">of 10 Glasses</string>
+    <string name="completed">Awsome completed!</string>
+    <string name="add_barrier_success">add barrier success</string>
+
+
+    <!-- Food data -->
+    <string name="foodid">1</string>
+    <string name="foodname">Apple</string>
+    <string name="foodportiontype">Medium</string>
+    <string name="foodthumbnail">No Thumbnail</string>
+    <string name="foodpic">No Pic</string>
+    <string name="foodprotein">0.41</string>
+    <string name="foodfat">0.9</string>
+    <string name="foodcarbohydrate">14.05</string>
+    <string name="foodfibre">2.1</string>
+    <string name="foodsugar">10.33</string>
+
+</resources>

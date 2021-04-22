@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/foodNameItemTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_20dp"
+
+        android:padding="@dimen/dimen_5dp"
+        android:text="@string/food_name"
+        android:textColor="@color/purple_200"
+        android:textSize="@dimen/sub_heading"
+        app:drawableEndCompat="@drawable/ic_add_24px" />
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginEnd="@dimen/margin_end"
+        android:layout_marginBottom="5dp"
+
+        android:gravity="center"
+        android:text="@string/edit_profile"
+        android:textColor="@color/purple_200"
+        android:textSize="@dimen/heading" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginEnd="@dimen/margin_end"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+
+        android:gravity="center"
+        android:text="@string/name"
+        android:textColor="@color/purple_200"
+        android:textSize="@dimen/dimen_16sp" />
+
+    <EditText
+        android:id="@+id/userNameTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginEnd="@dimen/margin_end"
+
+        android:inputType="textPersonName"
+        android:maxLength="25"
+        android:textColor="@color/purple_200" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginEnd="@dimen/margin_end"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+
+        android:gravity="center"
+        android:text="@string/mobileno"
+        android:textColor="@color/purple_200"
+        android:textSize="@dimen/dimen_16sp" />
+
+    <EditText
+        android:id="@+id/userMobileTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginEnd="@dimen/margin_end"
+        android:editable="false"
+        android:focusable="false"
+
+        android:inputType="phone"
+        android:maxLength="10"
+        android:textColor="@color/purple_200" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginEnd="@dimen/margin_end"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+
+        android:gravity="center"
+        android:text="@string/user_bio"
+        android:textColor="@color/purple_200"
+        android:textSize="@dimen/dimen_16sp" />
+
+    <EditText
+        android:id="@+id/userBioTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginEnd="@dimen/margin_end"
+
+        android:inputType="text"
+        android:textColor="@color/purple_200" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginEnd="@dimen/margin_end"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+
+        android:gravity="center"
+        android:text="@string/gender"
+        android:textColor="@color/purple_200"
+        android:textSize="@dimen/dimen_16sp" />
+
+
+    <EditText
+        android:id="@+id/genderAndAgeTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginEnd="@dimen/margin_end"
+        android:editable="false"
+        android:focusable="false"
+
+        android:inputType="text"
+        android:textColor="@color/purple_200" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/saveProfileBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginTop="@dimen/dimen_30dp"
+        android:layout_marginEnd="@dimen/margin_end"
+        android:background="@drawable/button_bg"
+
+        android:text="@string/save_complete_profile"
+        android:textColor="@color/white" />
+</LinearLayout>

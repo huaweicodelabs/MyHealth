@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreenDest">
+
+    <fragment
+        android:id="@+id/splashScreenDest"
+        android:name="com.huawei.myhealth.java.ui.fragments.SplashScreenFragment"
+        android:label="SplashScreenFragment"
+        tools:layout="@layout/fragment_splash_screen">
+        <action
+            android:id="@+id/action_splashScreenDest_to_loginFragment"
+            app:destination="@id/loginFragmentDest" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragmentDest"
+        android:name="com.huawei.myhealth.java.ui.fragments.SignInFragment"
+        android:label="@string/sign_in"
+        tools:layout="@layout/fragment_signin">
+        <action
+            android:id="@+id/action_loginFragmentDest_to_signUpFragment"
+            app:destination="@id/completeProfileFragmentDest" />
+        <action
+            android:id="@+id/action_loginFragmentDest_to_homeScreen"
+            app:destination="@id/homeScreenDest" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/completeProfileFragmentDest"
+        android:name="com.huawei.myhealth.java.ui.fragments.CompleteProfileFragment"
+        android:label="@string/complete_profile"
+        tools:layout="@layout/fragment_complete_profile" />
+
+    <fragment
+        android:id="@+id/homeScreenDest"
+        android:name="com.huawei.myhealth.java.ui.fragments.HomeScreenFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home_screen">
+        <action
+            android:id="@+id/action_homeScreenDest_to_profileFragment"
+            app:destination="@id/profileDest" />
+        <action
+            android:id="@+id/action_homeScreenDest_to_insightsFragment"
+            app:destination="@id/insightsDest" />
+        <action
+            android:id="@+id/action_homeScreenDest_to_waterIntakeFragment"
+            app:destination="@id/waterIntakeFragment" />
+        <action
+            android:id="@+id/action_homeScreenDest_to_stepsWalkedFragment2"
+            app:destination="@id/stepsWalkedFragment" />
+        <action
+            android:id="@+id/action_homeScreenDest_to_calBurnedFragment"
+            app:destination="@id/calBurnedFragment" />
+        <action
+            android:id="@+id/action_homeScreenDest_to_timePeriodDialog"
+            app:destination="@id/timePeriodDialog" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileDest"
+        android:name="com.huawei.myhealth.java.ui.fragments.ProfileFragment"
+        android:label="@string/my_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/insightsDest"
+        android:name="com.huawei.myhealth.java.ui.fragments.InsightsFragment"
+        android:label="@string/insights"
+        tools:layout="@layout/fragment_insights" />
+
+    <fragment
+        android:id="@+id/waterIntakeFragment"
+        android:name="com.huawei.myhealth.java.ui.fragments.WaterIntakeFragment"
+        android:label="@string/water_intake"
+        tools:layout="@layout/fragment_water_intake" />
+    <fragment
+        android:id="@+id/stepsWalkedFragment"
+        android:name="com.huawei.myhealth.java.ui.fragments.StepsWalkedFragment"
+        android:label="@string/tv_steps"
+        tools:layout="@layout/fragment_steps_walked" />
+    <fragment
+        android:id="@+id/calBurnedFragment"
+        android:name="com.huawei.myhealth.java.ui.fragments.CalBurnFragment"
+        android:label="@string/cal_burned"
+        tools:layout="@layout/fragment_cal_burn" />
+
+    <dialog
+        android:id="@+id/timePeriodDialog"
+        android:name="com.huawei.myhealth.java.ui.dialog.TimePeriodDialog"
+        android:label="TimePeriodDialog"
+        tools:layout="@layout/dialog_time_period" >
+        <action
+            android:id="@+id/action_timePeriodDialog_to_foodSearchFragment"
+            app:destination="@id/foodSearchFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/foodSearchFragment"
+        android:name="com.huawei.myhealth.java.ui.fragments.FoodSearchFragment"
+        android:label="FoodSearchFragment"
+        tools:layout="@layout/fragment_food_search">
+        <action
+            android:id="@+id/action_foodSearchFragment_to_viewAndAddFoodFragment"
+            app:destination="@id/viewAndAddFoodFragment">
+            <argument
+                android:name="foodIdArg"
+                android:defaultValue="1"
+                app:argType="integer" />
+            <argument
+                android:name="calorieInFoodArg"
+                android:defaultValue="0"
+                app:argType="integer" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/viewAndAddFoodFragment"
+        android:name="com.huawei.myhealth.java.ui.fragments.ViewAndAddFoodFragment"
+        android:label="@string/view_and_add_food"
+        tools:layout="@layout/fragment_view_add_food">
+        <argument
+            android:name="foodIdArg"
+            android:defaultValue="1"
+            app:argType="integer" />
+        <argument
+            android:name="calorieInFoodArg"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+</navigation>

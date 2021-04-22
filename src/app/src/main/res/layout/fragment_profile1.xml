@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profileParentLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/userProfilePicIMV"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/userpic_desc"
+        android:src="@drawable/ic_account_circle_24px" />
+
+    <LinearLayout
+        android:id="@+id/userDetailsLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userProfilePicIMV"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/userNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/user_bio"
+            android:textSize="@dimen/sub_heading"
+            app:drawableStartCompat="@drawable/ic_perm_identity_24px" />
+
+        <TextView
+            android:id="@+id/userMobileTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/user_id"
+            android:textSize="@dimen/sub_heading"
+            app:drawableStartCompat="@drawable/ic_mobile" />
+
+        <TextView
+            android:id="@+id/userBioTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/user_bio"
+            android:textSize="@dimen/sub_heading"
+            app:drawableStartCompat="@drawable/ic_info_24px" />
+
+        <TextView
+            android:id="@+id/genderAndAgeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/gender"
+            android:textSize="@dimen/sub_heading"
+            app:drawableStartCompat="@drawable/ic_wc_24px" />
+
+        <TextView
+            android:id="@+id/appVersionTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/app_version"
+            android:textSize="@dimen/sub_heading"
+            app:drawableStartCompat="@drawable/ic_model_training_24px" />
+
+        <TextView
+            android:id="@+id/logoutTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/logout"
+            android:textSize="@dimen/sub_heading"
+            app:drawableStartCompat="@drawable/ic_logout_24px" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/appNameTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userDetailsLay"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/app_name"
+        android:textSize="@dimen/heading" />
+</RelativeLayout>

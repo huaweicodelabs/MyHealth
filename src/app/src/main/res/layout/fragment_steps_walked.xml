@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.WaterIntakeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_60dp"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginLeft="@dimen/dimen_10dp">
+
+
+            <TextView
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/today"
+                android:textSize="@dimen/dimen_16sp"
+                android:textColor="@color/black"
+                android:layout_margin="@dimen/dimen_10dp"/>
+            <ImageView
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_drop_down_24"
+                android:layout_marginTop="@dimen/dimen_10dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_10dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="@dimen/dimen_10dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_watertaken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:text="@string/steps"
+            android:textColor="@color/purple_200"
+            android:textSize="@dimen/dimen_20sp"
+           />
+        <ProgressBar
+            android:id="@+id/pb_progress_watertaken"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:max="10000"
+            android:progress="0"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_20dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_200dp">
+
+            <TextView
+
+                android:id="@+id/steps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/tv_steps"
+                android:textColor="@color/purple_200"
+                android:textSize="@dimen/dimen_25sp"
+                android:layout_marginLeft="@dimen/dimen_20dp"/>
+
+          <EditText
+
+              android:id="@+id/et_steps"
+              android:layout_width="@dimen/dimen_150dp"
+              android:layout_height="@dimen/dimen_50dp"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:layout_marginRight="@dimen/dimen_20dp"
+              android:background="@drawable/edittext_bg"
+              android:inputType="number"
+              android:textColor="@color/purple_200"
+              android:hint="0"
+              android:gravity="center"
+              android:textSize="@dimen/dimen_20sp"
+              android:maxLength="10"/>
+
+        </RelativeLayout>
+
+        <TextView
+
+            android:id="@+id/tv_done"
+            android:layout_width="@dimen/dimen_180dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:text="@string/done"
+            android:padding="@dimen/dimen_10dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+
+            android:id="@+id/tv_glasses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:text="@string/todays_tip"
+            android:textColor="@color/purple_200"
+            android:textSize="@dimen/dimen_18sp"/>
+
+        <TextView
+
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:text="@string/steps_tip"
+            android:textColor="@color/purple_200"
+            android:textSize="@dimen/dimen_16sp"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
